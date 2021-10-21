@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Qahiri&family=Roboto&display=swap" rel="stylesheet">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header area start  -->
+    <header>
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light shadow-lg bg-light">
+                <div class="container">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </section>
+    </header>
+    <!-- header area end  -->
+    
+
+
+
+    <!-- main area start  -->
+    <main>
+        <section>
+            <h1 class="cfs3 ff-os text-center py-5">EXPRESS JS WITH NODE</h1>
+            <div class="container py-5">
+                
+                <h1 class="cfs2">Node download and folder</h1>
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <h3 class="ff-ro">To explore node ,you have to download node js from <a href="https://nodejs.org/en/">here</a></h3>
+                        <p>after downloading node ,you have to check the version of it. <br> to check version...just open your command line prompt and type <span class="text-primary">node -v</span></p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img style="height: 150px;" src="https://i.ibb.co/9pQpK2j/Capture1.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <p class="ff-ro">after checking your version of node you have to maka a folder in your prijects file.you can create a project folder manually of by the help of command prompt</p>
+                        <p class="ff-ro">To create a folder by command prompt you have to go first in ypour project folder by command line.then just type <span class="text-danger">mkdir my-first-node</span>.it will create your app automatically and to check your folder...just type <span class="text-success">dir</span> in command line</p>
+                        <h2 class="fw-bold">#summary</h2>
+                        <ul>
+                            <li>node -v</li>
+                            <li>mkdir my-first-node</li>
+                            <li>dir</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img class="w-100" src="https://i.ibb.co/SvYmmrX/Capture2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container py-5">
+                <h1 class="cfs2">VS code and npm init & create a index.js file</h1>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p>if  you are in your folder by command line...Now type <span class="text-danger">code . (code space dot)</span> then it will automatically start in your vs code</p>
+                        <p>then type <span class="text-danger">npm init</span>....what ever it returns....just press enter.then you will find this line at last</p>
+                        <p>if you go to your vs code...you will see a json file has been created in your repository</p>
+                        <p>Now give a last command <span class="text-danger">npm install express --save</span></p>
+                        <p>finally create a index.js file in the same folder where your json file is in</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="https://i.ibb.co/SvYmmrX/Capture2.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="https://i.ibb.co/NswZtrm/Capture4.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <h1 class="cfs2">Working with vs code in index.js</h1>
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <p>1. const express = require('express');</p>
+                        <p>2. const app = express()</p>
+                        <p>3. const port = 5000;</p>
+                        <p>4. app.get('/',(req,res)=>{ res.send('hello world')})</p>
+                        <p>5.app.listen(port,()=>{
+                            console.log('listening the port',port)
+                        })</p>
+                        <p class="py-5">Now go to command line and type node index.js.then is will show you that port is listening 5000 <br> and after this if you open your browser and just type <span class="text-dark bg-warning">localhost5000</span></p>
+                        <p>magic!!! its showing you <span class="text-white bg-danger">hello world</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1 class="cfs2">Install Nodemon</h1>
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <p>install this command <span class="text-white bg-danger">npm install -g nodemon</span></p>
+                        <p>add this two command in your package.json file <br><span class="text-dark bg-warning">"start": "node index.js", <br>"start-dev": "nodemon index.js",</span></p>
+                        <p>This process is just for to see changes as live site</p>
+                        <p>Now  go to your vs code and give this command <span class="text-white bg-success">nodemon index.js </span>  or <span class="text-white bg-primary">npm run start-dev</span></p>
+                        <p>if you want to change anything jsut go to your site and refresh</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1 class="cfs text-center py-5">Dynamic routing</h1>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <h1 class="cfs2">Dynamic routing by route</h1>
+                        <p>1. const express = require('express');</p>
+                        <p>2. const app = express()</p>
+                        <p>3. const port = 5000;</p>
+                        <p>const users = [ <br>
+                            {id : 0,name:"bipul chandro roy",age:26},<br>
+                            {id : 1,name:"sagar chandro roy",age:23},<br>
+                            {id : 2,name:"sujon chandro roy",age:25},<br>
+                            {id : 3,name:"mithun chandro roy",age:23},<br>
+                            {id : 4,name:"uttam chandro roy",age:25}<br>]
+                        </p>
+                        <p>4. app.get('/users',(req,res)=>{ res.send(users)})</p>
+                        <p>5.app.listen(port,()=>{
+                            console.log('listening the port',port)
+                        })</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h1 class="cfs2">Dynamic routing by API</h1>
+                        <p>1. const express = require('express');</p>
+                        <p>2. const app = express()</p>
+                        <p>3. const port = 5000;</p>
+                        <p>const users = [ <br>
+                            {id : 0,name:"bipul chandro roy",age:26},<br>
+                            {id : 1,name:"sagar chandro roy",age:23},<br>
+                            {id : 2,name:"sujon chandro roy",age:25},<br>
+                            {id : 3,name:"mithun chandro roy",age:23},<br>
+                            {id : 4,name:"uttam chandro roy",age:25}<br>]
+                        </p>
+                        <p>4. app.get('/users',(req,res)=>{ <br>
+                             res.send(users) <br>
+                            })</p>
+                        <p>5. app.get('/users/:id',(req,res)=>{ <br>
+                            const id = req.param.id <br>
+                            const user = users[id] <br>
+                            res.send(user)
+                        })</p>
+                        <p>6.app.listen(port,()=>{
+                            console.log('listening the port',port)
+                        })</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h1 class="cfs2">Dynamic routing by query</h1>
+                        <p>1. const express = require('express');</p>
+                        <p>2. const app = express()</p>
+                        <p>3. const port = 5000;</p>
+                        <p>const users = [ <br>
+                            {id : 0,name:"bipul chandro roy",age:26},<br>
+                            {id : 1,name:"sagar chandro roy",age:23},<br>
+                            {id : 2,name:"sujon chandro roy",age:25},<br>
+                            {id : 3,name:"mithun chandro roy",age:23},<br>
+                            {id : 4,name:"uttam chandro roy",age:25}<br>]
+                        </p>
+                        <p>4. app.get('/users',(req,res)=>{ <br>
+                            const search = req.query.search <br>
+                            if(search){ <br>
+                                const searchResult = users.filter(user => user.name.toLocaleLowerCase().includes(search)) <br>
+                                res.send(searchResult) <br>
+                            }else{<br>
+                                res.send(users) <br>
+                            }
+                            
+                        })</p>
+                        <p>5.app.listen(port,()=>{
+                            console.log('listening the port',port)
+                        })</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1 class="cfs text-center">Fetch to load data, handle cors </h1>
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                       <p>npm install cors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main area end  -->
+    
+
+
+
+
+    <!-- footer area start  -->
+    <footer>
+        <section>
+            <div class="container">
+
+            </div>
+        </section>
+    </footer>
+    <!-- footer area start  -->
+    
+    <!-- font awesome js  -->
+    <script src="https://kit.fontawesome.com/b7ab4b2e5e.js" crossorigin="anonymous"></script>
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- custom js  -->
+    <script src="script.js"></script>
+</body>
+</html>
