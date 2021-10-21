@@ -18,33 +18,21 @@
         <section>
             <nav class="navbar navbar-expand-lg navbar-light shadow-lg bg-light">
                 <div class="container">
-                  <a class="navbar-brand" href="#">Navbar</a>
+                  <a class="navbar-brand cfs3 ff-os text-warning" href="#">#js_TALK</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <a class="nav-link" href="#">React</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#">JS</a>
                       </li>
-                    </ul>
                   </div>
                 </div>
               </nav>
@@ -153,7 +141,7 @@
 
         <section>
             <div class="container">
-                <h1 class="cfs text-center py-5">Dynamic routing</h1>
+                <h1 class="cfs text-center py-5">Primary Routing Users</h1>
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <h1 class="cfs2">Dynamic routing by route</h1>
@@ -167,11 +155,17 @@
                             {id : 3,name:"mithun chandro roy",age:23},<br>
                             {id : 4,name:"uttam chandro roy",age:25}<br>]
                         </p>
-                        <p>4. app.get('/users',(req,res)=>{ res.send(users)})</p>
-                        <p>5.app.listen(port,()=>{
+                        <p>4. app.get('/users',(req,res)=>{ <br>
+                             res.send(users) <br>
+                             })</p>
+                        <p>5.app.listen(port,()=>{ <br>
                             console.log('listening the port',port)
                         })</p>
                     </div>
+
+
+
+
                     <div class="col-12 col-md-4">
                         <h1 class="cfs2">Dynamic routing by API</h1>
                         <p>1. const express = require('express');</p>
@@ -196,6 +190,8 @@
                             console.log('listening the port',port)
                         })</p>
                     </div>
+
+                    
                     <div class="col-12 col-md-4">
                         <h1 class="cfs2">Dynamic routing by query</h1>
                         <p>1. const express = require('express');</p>
@@ -229,9 +225,49 @@
         <section>
             <div class="container">
                 <h1 class="cfs text-center">Fetch to load data, handle cors </h1>
-                <div class="row">
-                    <div class="col-12 col-md-12">
-                       <p>npm install cors</p>
+                <div class="row py-5">
+                    <div class="col-12 col-md-5">
+                        <ul>
+                            <li>first install cors by giving this command in command propmt <span class="text-white bg-success">npm install cors</span></li>
+                            <li>then go to call it in top under express call</li>
+                        </ul>
+                       <p>it will give you a to not write again and again <span class="text-white bg-primary">node index.js</span>.and now go to your command prompt and type <span class="text-white bg-success">npm run start-dev</span></p>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <img src="https://i.ibb.co/C7VnbR5/Capture5.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-12 col-md-6">
+                        <p>1. const express = require('express');</p>
+                        <p>2. const cors = require('cors')</p>
+                        <p>3. const app = express()</p>
+                        <p>4. app.use(cors())</p>
+                        <p>5. app.use(express.json())</p>
+                        <p>6. const port = 5000;</p>
+                        <p>const users = [ <br>
+                            {id : 0,name:"bipul chandro roy",age:26},<br>
+                            {id : 1,name:"sagar chandro roy",age:23},<br>
+                            {id : 2,name:"sujon chandro roy",age:25},<br>
+                            {id : 3,name:"mithun chandro roy",age:23},<br>
+                            {id : 4,name:"uttam chandro roy",age:25}<br>]
+                        </p>
+                        <p>7. app.get('/users',(req,res)=>{ <br>
+                             res.send(users) <br>
+                            })</p>
+                        <p>8.app.post('/users',(req,res)=>{ <br>
+                            const newUser = req.body <br>
+                            newUser.id = users.length <br>
+                            users.push(newUser) <br>
+                            <span class="text-white bg-warning">res.json(newUser)</span><br>
+                            })</p>
+                        <p>app.listen(port,()=>{ <br>
+                            console.log('listening the port',port) <br>
+                        })</p>
+                            <i>to set json format...yo have to call <span class="text-white bg-warning">app.use(express.json())</span>in top</i>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <img src="https://i.ibb.co/hM4bc51/Capture6.jpg" alt="" class="w-100">
                     </div>
                 </div>
             </div>
