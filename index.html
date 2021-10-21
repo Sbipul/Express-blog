@@ -25,13 +25,25 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active cfs2 ff-os" aria-current="page" href="#">NODE</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">React</a>
+                        <a class="nav-link  cfs2 ff-os"  href="#">REACT</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">JS</a>
+                        <a class="nav-link  cfs2 ff-os" href="#">TYPESCRIPT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  cfs2 ff-os" href="#">JS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  cfs2 ff-os" href="#">BOOTSTRAP</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  cfs2 ff-os" href="#">CSS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  cfs2 ff-os" href="#">HTML</a>
                       </li>
                   </div>
                 </div>
@@ -191,7 +203,7 @@
                         })</p>
                     </div>
 
-                    
+
                     <div class="col-12 col-md-4">
                         <h1 class="cfs2">Dynamic routing by query</h1>
                         <p>1. const express = require('express');</p>
@@ -270,12 +282,55 @@
                       <img src="https://i.ibb.co/hM4bc51/Capture6.jpg" alt="" class="w-100">
                     </div>
                 </div>
+                <div class="row py-5">
+                    <h1 class="cfs">#summary & commands</h1>
+                    <ul>
+                        <li><span class="badge bg-primary">mkdir my-first-node</span></li>
+                        <li><span class="badge bg-secondary">code .</span></li>
+                        <li><span class="badge bg-success">npm init</span> or <span class="badge bg-success">npm init -y</span></li>
+                        <li><span class="badge bg-danger">npm install express --save</span></li>
+                        <li>create a index.js file besides package.json file</li>
+                        <li>const express = require('express');</li>
+                        <li>const cors = require('cors')</li>
+                        <li>const app = express()</li>
+                        <li>app.use(cors())</li>
+                        <li>app.use(express.json())</li>
+                        <li>const port = 5000;</li>
+                        <li>set this in package.json - <br> "start": "node index.js", <br>
+                            "start-dev": "nodemon index.js",</li>
+                        <li>app.get('/users',(req,res)=>{ <br>
+                            res.send(users) <br>
+                        })</li>
+                        <li>app.post('/users',(req,res)=>{ <br>
+                            const newUser = req.body<br>
+                            newUser.id = users.length<br>
+                            users.push(newUser)<br>
+                            res.json(newUser)<br>
+                        })</li>
+                        <li>app.listen(port,()=>{ <br>
+                            console.log('listening the port',port)<br>
+                        })</li>
+                    </ul>
+                    <div class="col-12 col-md-6">
+                        
+                    </div>
+                    <div class="col-12 col-md-6">
+                      
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <!-- main area end  -->
     
 
+
+
+<!--     
+    <span class="badge bg-warning text-dark">Warning</span>
+    <span class="badge bg-info text-dark">Info</span>
+    <span class="badge bg-light text-dark">Light</span>
+    <span class="badge bg-dark">Dark</span> -->
 
 
 
