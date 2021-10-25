@@ -57,10 +57,12 @@
 
     <!-- main area start  -->
     <main>
+
+
         <section>
-            <h1 class="cfs3 ff-os text-center py-5">EXPRESS JS WITH NODE</h1>
+            <h1 class="cfs3 ff-os text-center py-5">NODE JS WITH EXPRESS</h1>
             <div class="container py-5">
-                
+                <h1 class="cfs text-center py-3">Environment Setup</h1>
                 <h1 class="cfs2">Node download and folder</h1>
                 <div class="row">
                     <div class="col-12 col-md-8">
@@ -73,6 +75,8 @@
                 </div>
             </div>
         </section>
+
+
 
         <section>
             <div class="container py-5">
@@ -93,6 +97,8 @@
                 </div>
             </div>
         </section>
+
+
 
 
         <section>
@@ -117,6 +123,8 @@
         </section>
 
 
+
+
         <section>
             <div class="container">
                 <h1 class="cfs2">Working with vs code in index.js</h1>
@@ -136,6 +144,9 @@
             </div>
         </section>
 
+
+
+
         <section>
             <div class="container">
                 <h1 class="cfs2">Install Nodemon</h1>
@@ -150,6 +161,9 @@
                 </div>
             </div>
         </section>
+
+
+
 
         <section>
             <div class="container">
@@ -174,8 +188,6 @@
                             console.log('listening the port',port)
                         })</p>
                     </div>
-
-
 
 
                     <div class="col-12 col-md-4">
@@ -234,6 +246,11 @@
             </div>
         </section>
 
+
+
+
+
+
         <section>
             <div class="container">
                 <h1 class="cfs text-center">Fetch to load data, handle cors </h1>
@@ -249,6 +266,18 @@
                         <img src="https://i.ibb.co/C7VnbR5/Capture5.jpg" alt="" class="w-100">
                     </div>
                 </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section>
+            <div class="container">
                 <div class="row py-5">
                     <div class="col-12 col-md-6">
                         <p>1. const express = require('express');</p>
@@ -282,44 +311,273 @@
                       <img src="https://i.ibb.co/hM4bc51/Capture6.jpg" alt="" class="w-100">
                     </div>
                 </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section>
+            <div class="container">
+                <h1 class="cfs">#summary & commands</h1>
                 <div class="row py-5">
-                    <h1 class="cfs">#summary & commands</h1>
-                    <ul>
-                        <li><span class="badge bg-primary">mkdir my-first-node</span></li>
-                        <li><span class="badge bg-secondary">code .</span></li>
-                        <li><span class="badge bg-success">npm init</span> or <span class="badge bg-success">npm init -y</span></li>
-                        <li><span class="badge bg-danger">npm install express --save</span></li>
-                        <li>create a index.js file besides package.json file</li>
-                        <li>const express = require('express');</li>
-                        <li>const cors = require('cors')</li>
-                        <li>const app = express()</li>
-                        <li>app.use(cors())</li>
-                        <li>app.use(express.json())</li>
-                        <li>const port = 5000;</li>
-                        <li>set this in package.json - <br> "start": "node index.js", <br>
-                            "start-dev": "nodemon index.js",</li>
-                        <li>app.get('/users',(req,res)=>{ <br>
-                            res.send(users) <br>
-                        })</li>
-                        <li>app.post('/users',(req,res)=>{ <br>
-                            const newUser = req.body<br>
-                            newUser.id = users.length<br>
-                            users.push(newUser)<br>
-                            res.json(newUser)<br>
-                        })</li>
-                        <li>app.listen(port,()=>{ <br>
-                            console.log('listening the port',port)<br>
-                        })</li>
-                    </ul>
                     <div class="col-12 col-md-6">
-                        
+                        <ul>
+                            <li><span class="badge bg-primary">mkdir my-first-node</span></li>
+                            <li><span class="badge bg-secondary">code .</span></li>
+                            <li><span class="badge bg-success">npm init</span> or <span class="badge bg-success">npm init -y</span></li>
+                            <li><span class="badge bg-danger">npm install express --save</span></li>
+                            <li>create a index.js file besides package.json file</li>
+                            <li>const express = require('express');</li>
+                            <li>const cors = require('cors')</li>
+                            <li>const app = express()</li>
+                            <li>app.use(cors())</li>
+                            <li>app.use(express.json())</li>
+                            <li>const port = 5000;</li>
+                            <li>set this in package.json - <br> "start": "node index.js", <br>
+                                "start-dev": "nodemon index.js",</li>
+                            <li>app.get('/users',(req,res)=>{ <br>
+                                res.send(users) <br>
+                            })</li>
+                            <li>app.post('/users',(req,res)=>{ <br>
+                                const newUser = req.body<br>
+                                newUser.id = users.length<br>
+                                users.push(newUser)<br>
+                                res.json(newUser)<br>
+                            })</li>
+                            <li>app.listen(port,()=>{ <br>
+                                console.log('listening the port',port)<br>
+                            })</li>
+                        </ul>
                     </div>
+
                     <div class="col-12 col-md-6">
                       
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section>
+            <div class="container">
+                <h3 class="text-center text-danger p-0 m-0 cfs3">Connecting(Mongodb)</h3>
+                <p class="w-75 mx-auto">mongo db is a very popular and large scalabe database till now.A javascript developer have to choose mongo db in the case of haveing similarity of syntaxes and methods.Here we will see how to use mongo db with express and node.</p>
+                <p class="w-75 mx-auto">First sign into mongoDB atlas and make a database and collection with username and password</p>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h1 class="cfs">Get api from database</h1>
+                        <h3>First require mongodb</h3>
+                        <p>1.const { MongoClient } = require('mongodb');</p>
+                        <h3>Then put your uri and client with user name and password</h3>
+                        <p>2.const uri = 'mongodb+srv://${process.env.DB_USER}:$ <br>{process.env.DB_PASS}@cluster0.ew1rb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';</p>
+                        <p>3.const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });</p>
+                        <div class="bg-warning p-3">
+                            <p>4.const run = async() => {</p>
+                                <p>5.try{</p>
+                                <p>6.await client.connect()</p>
+                                <p>7.const database = client.db('carMechanic');</p>
+                                <p>8.const servicesCollection = database.collection('services')</p>
+                                <div class="bg-success p-3">
+                                    <h3>/////get api from database</h3>
+                                <p>9.app.get('/service',async(req,res)=>{ <br>
+                                    const cursor = servicesCollection.find({})<br>
+                                    const result = await cursor.toArray()<br>
+                                    res.send(result)<br>
+                                })</p>
+                                </div>
+                                <p>10.}</p>
+                                <p>11.finally{ <br>
+                                    // await client.close()
+                                }</p>
+                                <p>12.} <br> }</p>
+                                <p>13.run().catch(console.dir)</p>
+                        </div>
+                        <p>14.app.listen(port,()=>{
+                            console.log('runnung server on port',port);
+                        })</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h1 class="cfs">Post to database from UI</h1>
+                        <h3>First require mongodb</h3>
+                        <p>1.const { MongoClient } = require('mongodb');</p>
+                        <h3>Then put your uri and client with user name and password</h3>
+                        <p>2.const uri = 'mongodb+srv://${process.env.DB_USER}:$ <br>{process.env.DB_PASS}@cluster0.ew1rb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';</p>
+                        <p>3.const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });</p>
+                        <div class="bg-warning p-3">
+                            <p>4.const run = async() => {</p>
+                                <p>5.try{</p>
+                                <p>6.await client.connect()</p>
+                                <p>7.const database = client.db('carMechanic');</p>
+                                <p>8.const servicesCollection = database.collection('services')</p>
+                                <div class="bg-success p-3">
+                                    <h3>/////send data to database from input</h3>
+                                <p>9.app.post('/service', async(req,res)=>{ <br>
+                                    const service = req.body<br>
+                                    const result = await servicesCollection.insertOne(service)<br>
+                                    console.log(result)<br>
+                                    res.send(result)<br>
+                                })<br>
+                                })</p>
+                                </div>
+                                <p>10.}</p>
+                                <p>11.finally{ <br>
+                                    // await client.close()
+                                }</p>
+                                <p>12.} <br> }</p>
+                                <p>13.run().catch(console.dir)</p>
+                        </div>
+                        <p>14.app.listen(port,()=>{
+                            console.log('runnung server on port',port);
+                        })</p>
                     </div>
                 </div>
             </div>
         </section>
+
+
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h1 class="cfs">Find data with specific id</h1>
+                        <h3>First require mongodb</h3>
+                        <p>0.const ObjectId = require('mongodb').ObjectId</p>
+                        <p>1.const { MongoClient } = require('mongodb');</p>
+                        <h3>Then put your uri and client with user name and password</h3>
+                        <p>2.const uri = 'mongodb+srv://${process.env.DB_USER}:$ <br>{process.env.DB_PASS}@cluster0.ew1rb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';</p>
+                        <p>3.const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });</p>
+                        <div class="bg-warning p-3">
+                            <p>4.const run = async() => {</p>
+                                <p>5.try{</p>
+                                <p>6.await client.connect()</p>
+                                <p>7.const database = client.db('carMechanic');</p>
+                                <p>8.const servicesCollection = database.collection('services')</p>
+                                <div class="bg-success p-3">
+                                    <h3>/////Find data with specific id</h3>
+                                <p>9.app.get('/service/:id',async(req,res)=>{ <br>
+                                    const id = req.params.id<br>
+                                    const query = {_id : ObjectId(id)}<br>
+                                    const result = await servicesCollection.findOne(query)<br>
+                                    res.json(result)<br>
+                                })<br>
+                                })</p>
+                                </div>
+                                <p>10.}</p>
+                                <p>11.finally{ <br>
+                                    // await client.close()
+                                }</p>
+                                <p>12.} <br> }</p>
+                                <p>13.run().catch(console.dir)</p>
+                        </div>
+                        <p>14.app.listen(port,()=>{
+                            console.log('runnung server on port',port);
+                        })</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h1 class="cfs">Delete data from database</h1>
+                        <h3>First require mongodb</h3>
+                        <p>0.const ObjectId = require('mongodb').ObjectId</p>
+                        <p>1.const { MongoClient } = require('mongodb');</p>
+                        <h3>Then put your uri and client with user name and password</h3>
+                        <p>2.const uri = 'mongodb+srv://${process.env.DB_USER}:$ <br>{process.env.DB_PASS}@cluster0.ew1rb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';</p>
+                        <p>3.const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });</p>
+                        <div class="bg-warning p-3">
+                            <p>4.const run = async() => {</p>
+                                <p>5.try{</p>
+                                <p>6.await client.connect()</p>
+                                <p>7.const database = client.db('carMechanic');</p>
+                                <p>8.const servicesCollection = database.collection('services')</p>
+                                <div class="bg-success p-3">
+                                    <h3>/////Delete data from database</h3>
+                                <p>9.app.delete('/service/:id',async(req,res)=>{ <br>
+                                    const id = req.params.id;<br>
+                                    const query = {_id : ObjectId(id)}<br>
+                                    const result = await servicesCollection.deleteOne(query)<br>
+                                    console.log(result)<br>
+                                    res.json(result)<br>
+                                })<br>
+                                })<br>
+                                })</p>
+                                </div>
+                                <p>10.}</p>
+                                <p>11.finally{ <br>
+                                    // await client.close()
+                                }</p>
+                                <p>12.} <br> }</p>
+                                <p>13.run().catch(console.dir)</p>
+                        </div>
+                        <p>14.app.listen(port,()=>{
+                            console.log('runnung server on port',port);
+                        })</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6"></div>
+                    <div class="col-12 col-md-6"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6"></div>
+                    <div class="col-12 col-md-6"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6"></div>
+                    <div class="col-12 col-md-6"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6"></div>
+                    <div class="col-12 col-md-6"></div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <!-- main area end  -->
     

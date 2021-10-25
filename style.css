@@ -29,3 +29,136 @@ ul{
     padding: 0;
     margin: 0;
 }
+
+
+
+
+
+
+/* custom classes with bootstrap  */
+/* .container{
+    padding: 0px 76px;
+}
+p{
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* flex-grow: 1; */
+/* 
+ul li{
+    flex-grow: 1;
+}
+.col-md-4{
+    width: 32.99%;
+    padding: 14px;
+    margin: 0 auto;
+}
+.col-md-8{
+    width: 67%;
+    padding: 14px;
+    margin: 0 auto;
+}
+.col-md-3{
+    width: 25%;
+    padding: 14px;
+}
+.col-md-6{
+    width: 49%;
+    padding: 14px;
+    margin: 0 auto;
+}
+.w-25{
+    width: 25%;
+}
+.w-50{
+    width: 50%;
+}
+.w-75{
+    width: 75%;
+}
+.w-100{
+    width: 100%;
+}
+
+
+.row{
+    display: flex;
+}
+.d-flex{
+    display: flex;
+}
+
+.p-3{
+    padding: 10px;
+}
+.p-2{
+    padding: 7px;
+}
+.p-5{
+    padding: 15px;
+}
+.py-5{
+    padding: 15px 0;
+}
+.mt-3{
+    margin-top: 10px;
+}
+.m-0{
+    margin: 0;
+}
+.p-0{
+    padding: 0;
+}
+
+.text-start{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+
+.text-end{
+    text-align: end;
+}
+.mx-auto{
+    margin: 0 auto;
+}
+
+
+
+
+
+
+.bg-success{
+    background: rgb(47, 153, 47);
+}
+.bg-danger{
+    background: rgb(153, 47, 47);
+}
+.bg-warning{
+    background: rgb(216, 169, 38);
+}
+.bg-primary{
+    background: rgb(38, 151, 216);
+}
+
+
+
+
+.text-success{
+    color: rgb(47, 153, 47);
+}
+.text-danger{
+    color: rgb(201, 42, 42);
+}
+.text-warning{
+    color: rgb(216, 169, 38);
+}
+.text-primary{
+    color: rgb(38, 151, 216);
+} */
