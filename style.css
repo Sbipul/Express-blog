@@ -22,14 +22,13 @@ font-family: 'Roboto', sans-serif; */
     font-size: 1.5rem;
     font-weight: 700;
 }
-p{
+/* p{
     text-align: justify;
-}
+} */
 ul{
     padding: 0;
     margin: 0;
 }
-
 
 
 
@@ -162,3 +161,30 @@ ul li{
 .text-primary{
     color: rgb(38, 151, 216);
 } */
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 95%;
+    }
+    .cfs3{
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    .cfs{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+}
+@media screen and (max-width: 576px) {
+    html{
+        font-size: 92%;
+    }
+    .cfs3{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .cfs{
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+}
