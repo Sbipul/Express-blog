@@ -47,9 +47,8 @@ ul{
     list-style: none;
     padding: 0;
     margin: 0;
-    /* flex-grow: 1; */
-/* 
-ul li{
+} */
+/* ul li{
     flex-grow: 1;
 }
 .col-md-4{
@@ -61,8 +60,8 @@ ul li{
     width: 67%;
     padding: 14px;
     margin: 0 auto;
-}
-.col-md-3{
+} */
+/* .col-md-3{
     width: 25%;
     padding: 14px;
 }
@@ -82,10 +81,10 @@ ul li{
 }
 .w-100{
     width: 100%;
-}
+} */
 
 
-.row{
+/* .row{
     display: flex;
 }
 .d-flex{
@@ -112,9 +111,9 @@ ul li{
 }
 .p-0{
     padding: 0;
-}
+} */
 
-.text-start{
+/* .text-start{
     text-align: left;
 }
 .text-center{
@@ -126,13 +125,13 @@ ul li{
 }
 .mx-auto{
     margin: 0 auto;
-}
+} */
 
 
 
 
 
-
+/* 
 .bg-success{
     background: rgb(47, 153, 47);
 }
@@ -144,11 +143,11 @@ ul li{
 }
 .bg-primary{
     background: rgb(38, 151, 216);
-}
+} */
 
 
 
-
+/* 
 .text-success{
     color: rgb(47, 153, 47);
 }

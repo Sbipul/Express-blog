@@ -182,7 +182,7 @@
                 <h1 class="cfs text-center py-5">Primary Routing Users</h1>
                 <div class="row">
                     <div class="col-12 col-lg-4 col-md-6 mb-4 mb-lg-0">
-                        <h1 class="cfs2">Dynamic routing by route</h1>
+                        <h1 class="cfs2">Primary routing by users</h1>
                         <p>1. const express = require('express');</p>
                         <p>2. const app = express()</p>
                         <p>3. const port = 5000;</p>
@@ -203,7 +203,7 @@
 
 
                     <div class="col-12 col-lg-4 col-md-6 mb-4 mb-lg-0">
-                        <h1 class="cfs2">Dynamic routing by API</h1>
+                        <h1 class="cfs2">Dynamic routing by id</h1>
                         <p>1. const express = require('express');</p>
                         <p>2. const app = express()</p>
                         <p>3. const port = 5000;</p>
@@ -366,7 +366,7 @@
 
         <section>
             <div class="container">
-                <h3 class="text-center text-danger p-0 m-0 cfs3">Connecting(Mongodb)</h3>
+                <h3 class="text-center text-danger p-0 m-0 cfs3">CRUD OPERATION <span class="fs-4">With mongoDB</span></h3>
                 <p class="w-75 mx-auto">mongo db is a very popular and large scalabe database till now.A javascript
                     developer have to choose mongo db in the case of haveing similarity of syntaxes and methods.Here we
                     will see how to use mongo db with express and node.</p>
@@ -540,7 +540,45 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6"></div>
+                        <div class="col-12 col-md-6 mb-4 mb-md-0">
+                            <h1 class="cfs">Update data from ui</h1>
+                            <h3>First require mongodb</h3>
+                            <p>0.const ObjectId = require('mongodb').ObjectId</p>
+                            <p>1.const { MongoClient } = require('mongodb');</p>
+                            <h3>Then put your uri and client with user name and password</h3>
+                            <p>2.const uri = 'mongodb+srv://${process.env.DB_USER}:$
+                                <br>{process.env.DB_PASS}@cluster0.ew1rb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+                            </p>
+                            <p>3.const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+                            </p>
+                            <div class="bg-warning p-3">
+                                <p>4.const run = async() => {</p>
+                                <p>5.try{</p>
+                                <p>6.await client.connect()</p>
+                                <p>7.const database = client.db('carMechanic');</p>
+                                <p>8.const servicesCollection = database.collection('services')</p>
+                                <div class="bg-success p-3">
+                                    <h3>/////update data with from ui</h3>
+                                    <p>9.app.put('/admin',async(req,res)=>{ <br>
+                                        const user = req.body<br>
+                                        const filter = {email : user?.email}<br>
+                                        const updateDoc = {$set : {role : 'admin'}}<br>
+                                        const result = await userCollection.updateOne(filter,updateDoc)<br>
+                                        res.json(result)<br>
+                                        })<br>
+                                        })</p>
+                                </div>
+                                <p>10.}</p>
+                                <p>11.finally{ <br>
+                                    // await client.close()
+                                    }</p>
+                                <p>12.} <br> }</p>
+                                <p>13.run().catch(console.dir)</p>
+                            </div>
+                            <p>14.app.listen(port,()=>{
+                                console.log('runnung server on port',port);
+                                })</p>
+                    </div>
                     <div class="col-12 col-md-6"></div>
                 </div>
             </div>
